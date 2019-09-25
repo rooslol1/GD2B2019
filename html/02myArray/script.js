@@ -14,7 +14,7 @@ let hit = 0;
 
 
 for(let i=0; i<maxpoints; i++){
-  addPoint("rgba(51, 153, 255,0.2)");
+  addPoint("rgba(255, 153, 0,0.2)");
 }
 
 let mouse = new Vector2d();
@@ -27,7 +27,7 @@ window.addEventListener('click',(e)=>{
   for (var i = 0; i < points.length; i++) {
     difference.differenceVector(points[i].position,mouse);
      if(difference.magnitude<points[i].radius){
-       points[i].color = "rgba(0,0,255,0.2)";
+       points[i].color = "rgba(90,255,255,0.2)";
        hit++
      };
    }
@@ -37,7 +37,7 @@ window.addEventListener('click',(e)=>{
     counter = 0;
     points.splice(0,maxpoints)
     for (var i = 0; i<maxpoints; i++) {
-      addPoint("rgba(204, 51, 255,0.2)");
+      addPoint("rgba(204, 0, 255,0.2)");
     }
   }
 

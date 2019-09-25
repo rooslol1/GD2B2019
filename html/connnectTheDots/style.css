@@ -1,0 +1,10 @@
+body{
+  background-color: lemonchiffon;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+#canvas{
+  background-color: floralwhite;
+}
